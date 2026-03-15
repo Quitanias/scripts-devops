@@ -1,0 +1,11 @@
+logs_servidor = """
+192.168.1.10 - GET /index.html 200
+10.0.0.5 - POST /api/login 500
+192.168.1.10 - GET /images/logo.png 200
+172.16.0.2 - GET /api/data 500
+10.0.0.5 - POST /api/login 500
+192.168.1.10 - GET /api/users 500
+10.0.0.5 - GET /status 200
+172.16.0.2 - POST /api/data 500
+10.0.0.5 - POST /api/login 500
+"""
