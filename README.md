@@ -15,10 +15,10 @@ Checks the **SSL certificate expiration date** for a list of domains. Prints a s
 ### `garbage_collector.py`
 Scans **AWS EBS volumes** in a given region and identifies those with `available` status — meaning they are not attached to any EC2 instance and are generating unnecessary cost. Outputs a list of orphaned volumes for review.
 
-### `github_api_consumer.py` *(previously `consumo_api.py`)*
+### `github_api_consumer.py`
 Queries the **GitHub API** to list all public repositories for the HashiCorp organization and filters for Terraform-related repos. Demonstrates best practices for API consumption: timeout handling, HTTP error checking via `raise_for_status()`, and CI/CD-friendly exit codes.
 
-### `log_analyzer.py` *(previously `logs_server_script.py`)*
+### `log_analyzer.py`
 Parses a server log file and counts **HTTP 500 errors per IP address**. Implements two approaches side-by-side: a full file read (simpler, higher memory usage) and a line-by-line read (memory-efficient, recommended for large log files).
 
 ---
